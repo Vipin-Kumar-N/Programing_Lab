@@ -1,4 +1,3 @@
-from secrets import choice
 from graphics.rectangle import*
 from graphics.circle import*
 from graphics.td_graphics.cuboid import*
