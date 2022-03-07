@@ -1,3 +1,6 @@
+from secrets import choice
+
+
 class bank:
     def __init__(self):
         self.accno=int(input("\nEnter Account number: "))
@@ -17,9 +20,18 @@ class bank:
             print("\nYou have Insufficient Balance")
     def display(self):
         print("\nNet Available Balance is: ",self.balance)
+print("Welcome to Bank")
 a=bank()
-a.deposit()
-a.withdraw()
-a.display()
+while True:
+   print("Select the option \n 1.Account Details\n 2.Deposit money \n3.Withdraw Money \n 4.Exit")
+   chose=int(input())
+   if chose==2:
+    a.deposit()
+   if chose==3:
+    a.withdraw()
+   if chose==1:
+    a.display()
+   if chose==4:
+    exit()
 
 
